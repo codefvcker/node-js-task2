@@ -5,7 +5,7 @@ class User {
     id = uuid(),
     name = 'USER',
     login = 'user',
-    password = 'P@55w0rd'
+    password = 'P@55w0rd',
   } = {}) {
     this.id = id;
     this.name = name;
@@ -13,9 +13,15 @@ class User {
     this.password = password;
   }
 
-  static toResponse(user) {
-    const { id, name, login } = user;
+  toResponse() {
+    const { id, name, login } = this;
     return { id, name, login };
+  }
+
+  update(name, login, password) {
+    this.name = name;
+    this.login = login;
+    this.password = password;
   }
 }
 
