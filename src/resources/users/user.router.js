@@ -3,7 +3,7 @@ const usersService = require('./user.service');
 
 router.route('/').get(async (req, res) => {
   const users = await usersService.getAll();
-  res.json(users.map((user) => user.toResponse()));
+  res.json(users.map(user => user.toResponse()));
 });
 
 router.route('/').post(async (req, res) => {

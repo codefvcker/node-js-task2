@@ -12,22 +12,6 @@ class Board {
     return { id, title, columns };
   }
 
-  getTasks() {
-    return this.tasks;
-  }
-
-  addTask(task) {
-    this.tasks.push(task);
-  }
-
-  getTaskById(id) {
-    return this.tasks.find(task => task.id === id);
-  }
-
-  deleteTaskById(id) {
-    this.tasks = this.tasks.filter(task => task.id !== id);
-  }
-
   update(title, columns) {
     this.title = title;
     this.columns = columns;

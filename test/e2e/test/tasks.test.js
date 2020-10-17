@@ -15,7 +15,7 @@ const TEST_TASK_DATA = {
 };
 
 const TEST_BOARD_DATA = {
-  title: 'Autotest board',
+  title: 'Autotest boards',
   columns: [
     { title: 'Backlog', order: 1 },
     { title: 'Sprint', order: 2 }

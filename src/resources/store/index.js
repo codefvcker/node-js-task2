@@ -1,6 +1,7 @@
 const store = {
   users: [],
-  boards: []
+  boards: [],
+  tasks: []
 };
 
 module.exports = store;
