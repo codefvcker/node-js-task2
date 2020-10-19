@@ -1,6 +1,9 @@
 const router = require('express').Router();
 const boardsService = require('./boards.service');
 
+const boom = require('@hapi/boom');
+const { postBoard, putBoard } = require('./boards.scheme');
+
 router.use('/', require('../tasks/tasks.router'));
 
 router.route('/').get(async (req, res) => {
@@ -8,42 +11,55 @@ router.route('/').get(async (req, res) => {
   res.json(boards.map(board => board.toResponse()));
 });
 
-router.route('/').post(async (req, res) => {
+router.route('/').post(async (req, res, next) => {
   const { title, columns } = req.body;
+  const { error } = postBoard.validate({ title, columns });
+  if (error) {
+    return next(boom.badRequest(error));
+  }
   const board = await boardsService.createBoard(title, columns);
   res.json(board.toResponse());
+
+  return next(req);
 });
 
-router.route('/:id').get(async (req, res) => {
+router.route('/:id').get(async (req, res, next) => {
   const { id } = req.params;
   const board = await boardsService.getById(id);
-  if (board) {
+  try {
     res.json(board.toResponse());
-  } else {
-    res.status(404).json("This board doesn't exist");
+  } catch (error) {
+    return next(boom.notFound(error));
   }
 });
 
-router.route('/:id').put(async (req, res) => {
+router.route('/:id').put(async (req, res, next) => {
   const { id } = req.params;
+  const { title, columns } = req.body;
   const board = await boardsService.getById(id);
-  if (board) {
-    const { title, columns } = req.body;
-    await boardsService.updateBoard(board, title, columns);
-    res.json(board.toResponse());
+
+  const { error } = putBoard.validate({ title, columns, id });
+
+  if (!error) {
+    try {
+      await boardsService.updateBoard(board, title, columns);
+      res.json(board.toResponse());
+    } catch (err) {
+      return next(boom.notFound(err));
+    }
   } else {
-    res.status(404).json("This board doesn't exist");
+    return next(boom.badRequest(error));
   }
 });
 
-router.route('/:id').delete(async (req, res) => {
+router.route('/:id').delete(async (req, res, next) => {
   const { id } = req.params;
   const board = await boardsService.getById(id);
   if (board) {
     await boardsService.deleteBoardById(id);
     res.status(204).end();
   } else {
-    res.status(404).json("This board doesn't exist");
+    return next(boom.notFound('This board doesnt exist'));
   }
 });
 

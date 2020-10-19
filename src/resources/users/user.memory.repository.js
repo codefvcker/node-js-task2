@@ -21,7 +21,6 @@ const deleteById = async id => {
   store.users = store.users.filter(user => user.id !== id);
   store.tasks = store.tasks.map(task => {
     if (task.userId === id) {
-      console.log('MATCH');
       task.userId = null;
     }
     return task;
