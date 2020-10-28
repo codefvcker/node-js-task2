@@ -109234,3 +109234,1249 @@
   },
   timestamp: '2020-10-25T22:02:33.226Z'
 }
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/',
+    queryParams: {},
+    body: {
+      title: 'Autotest boards',
+      columns: [ { title: 'Backlog', order: 1 }, { title: 'Sprint', order: 2 } ]
+    },
+    result: {
+      id: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      title: 'Autotest boards',
+      columns: [{"id":"9d97db56-ded9-4d53-9a79-e8368d185f58","title":"Backlog","order":1},{"id":"81381b93-f830-482a-96ae-edf55cc7154e","title":"Sprint","order":2}]
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:05.000Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users',
+    queryParams: {},
+    body: {},
+    result: [],
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:05.085Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/',
+    queryParams: {},
+    body: {
+      title: 'Autotest boards',
+      columns: [ { title: 'Backlog', order: 1 }, { title: 'Sprint', order: 2 } ]
+    },
+    result: {
+      id: '06415365-90a4-4028-bd40-f550de941cd2',
+      title: 'Autotest boards',
+      columns: [{"id":"fd119443-a098-4d0d-86a4-29c3a6b6f560","title":"Backlog","order":1},{"id":"5548c64d-4fba-4f8a-b9be-266204f11bc1","title":"Sprint","order":2}]
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:05.190Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/',
+    queryParams: {},
+    body: {},
+    result: [
+      {
+        id: '5b12e02c-b5f8-40e3-83be-87e146540257',
+        title: 'Autotest boards',
+        columns: [{"id":"9d97db56-ded9-4d53-9a79-e8368d185f58","title":"Backlog","order":1},{"id":"81381b93-f830-482a-96ae-edf55cc7154e","title":"Sprint","order":2}]
+      },
+      {
+        id: '06415365-90a4-4028-bd40-f550de941cd2',
+        title: 'Autotest boards',
+        columns: [{"id":"fd119443-a098-4d0d-86a4-29c3a6b6f560","title":"Backlog","order":1},{"id":"5548c64d-4fba-4f8a-b9be-266204f11bc1","title":"Sprint","order":2}]
+      }
+    ],
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:05.293Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/',
+    queryParams: {},
+    body: {},
+    result: [
+      {
+        id: '5b12e02c-b5f8-40e3-83be-87e146540257',
+        title: 'Autotest boards',
+        columns: [{"id":"9d97db56-ded9-4d53-9a79-e8368d185f58","title":"Backlog","order":1},{"id":"81381b93-f830-482a-96ae-edf55cc7154e","title":"Sprint","order":2}]
+      },
+      {
+        id: '06415365-90a4-4028-bd40-f550de941cd2',
+        title: 'Autotest boards',
+        columns: [{"id":"fd119443-a098-4d0d-86a4-29c3a6b6f560","title":"Backlog","order":1},{"id":"5548c64d-4fba-4f8a-b9be-266204f11bc1","title":"Sprint","order":2}]
+      }
+    ],
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:05.399Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: '5b12e02c-b5f8-40e3-83be-87e146540257' },
+    body: {
+      title: 'Autotest task',
+      order: 0,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: null,
+      columnId: null
+    },
+    result: {
+      id: 'a8db5eb0-d7ff-4f70-af62-7e0cc1cc6b39',
+      title: 'Autotest task',
+      order: 0,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      columnId: null
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:05.424Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users',
+    queryParams: {},
+    body: {
+      name: 'TEST_USER',
+      login: 'test_user',
+      password: 'T35t_P@55w0rd'
+    },
+    result: {
+      id: '59fab12e-0589-4213-b365-bb4f5c160e4c',
+      name: 'TEST_USER',
+      login: 'test_user'
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:05.428Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/:id',
+    queryParams: { id: '5b12e02c-b5f8-40e3-83be-87e146540257' },
+    body: {},
+    result: {
+      id: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      title: 'Autotest boards',
+      columns: [{"id":"9d97db56-ded9-4d53-9a79-e8368d185f58","title":"Backlog","order":1},{"id":"81381b93-f830-482a-96ae-edf55cc7154e","title":"Sprint","order":2}]
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:05.478Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users/:id',
+    queryParams: { id: '59fab12e-0589-4213-b365-bb4f5c160e4c' },
+    body: {},
+    result: {
+      id: '59fab12e-0589-4213-b365-bb4f5c160e4c',
+      name: 'TEST_USER',
+      login: 'test_user'
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:05.494Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: '5b12e02c-b5f8-40e3-83be-87e146540257' },
+    body: {},
+    result: [
+      {
+        id: 'a8db5eb0-d7ff-4f70-af62-7e0cc1cc6b39',
+        title: 'Autotest task',
+        order: 0,
+        description: 'Lorem ipsum',
+        userId: null,
+        boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+        columnId: null
+      }
+    ],
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:05.501Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/',
+    queryParams: {},
+    body: {
+      title: 'Autotest boards',
+      columns: [ { title: 'Backlog', order: 1 }, { title: 'Sprint', order: 2 } ]
+    },
+    result: {
+      id: 'ec58334e-1250-42ac-b71c-8bfd800c3395',
+      title: 'Autotest boards',
+      columns: [{"id":"4950f7f7-6058-4a77-a5c4-eb94a3aa9bc4","title":"Backlog","order":1},{"id":"7e16940d-008a-4fe6-afa9-c67589747b62","title":"Sprint","order":2}]
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:05.556Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: '5b12e02c-b5f8-40e3-83be-87e146540257' },
+    body: {},
+    result: [
+      {
+        id: 'a8db5eb0-d7ff-4f70-af62-7e0cc1cc6b39',
+        title: 'Autotest task',
+        order: 0,
+        description: 'Lorem ipsum',
+        userId: null,
+        boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+        columnId: null
+      }
+    ],
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:05.572Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      taskId: 'a8db5eb0-d7ff-4f70-af62-7e0cc1cc6b39'
+    },
+    body: {},
+    result: {
+      id: 'a8db5eb0-d7ff-4f70-af62-7e0cc1cc6b39',
+      title: 'Autotest task',
+      order: 0,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      columnId: null
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:05.671Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users/:id',
+    queryParams: { id: '59fab12e-0589-4213-b365-bb4f5c160e4c' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:05.684Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/:id',
+    queryParams: { id: 'ec58334e-1250-42ac-b71c-8bfd800c3395' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:05.691Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: '5b12e02c-b5f8-40e3-83be-87e146540257' },
+    body: {
+      title: 'Autotest task',
+      order: 0,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: null,
+      columnId: null
+    },
+    result: {
+      id: '09c4c574-e327-4178-b72c-2ca410634179',
+      title: 'Autotest task',
+      order: 0,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      columnId: null
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:05.778Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/',
+    queryParams: {},
+    body: {
+      title: 'Autotest boards',
+      columns: [ { title: 'Backlog', order: 1 }, { title: 'Sprint', order: 2 } ]
+    },
+    result: {
+      id: '467c846b-3c30-4633-9508-4ab321c48dc7',
+      title: 'Autotest boards',
+      columns: [{"id":"7eb23427-d6cb-414b-818b-42ad8c62f647","title":"Backlog","order":1},{"id":"ba533259-5a8b-40d3-ae09-b1490553a40e","title":"Sprint","order":2}]
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:05.858Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users',
+    queryParams: {},
+    body: {
+      name: 'TEST_USER',
+      login: 'test_user',
+      password: 'T35t_P@55w0rd'
+    },
+    result: {
+      id: '8ed3d6d9-b717-460f-8b57-b899ca9b1802',
+      name: 'TEST_USER',
+      login: 'test_user'
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:05.864Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/:id',
+    queryParams: { id: '467c846b-3c30-4633-9508-4ab321c48dc7' },
+    body: {
+      id: '467c846b-3c30-4633-9508-4ab321c48dc7',
+      title: 'Autotest updated boards',
+      columns: [
+        {
+          id: '7eb23427-d6cb-414b-818b-42ad8c62f647',
+          title: 'Backlog',
+          order: 1
+        },
+        {
+          id: 'ba533259-5a8b-40d3-ae09-b1490553a40e',
+          title: 'Sprint',
+          order: 2
+        }
+      ]
+    },
+    result: { id: undefined, title: undefined, columns: undefined },
+    type: 'put'
+  },
+  timestamp: '2020-10-28T18:09:05.936Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 204,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      taskId: '09c4c574-e327-4178-b72c-2ca410634179'
+    },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:05.940Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: '5b12e02c-b5f8-40e3-83be-87e146540257' },
+    body: {
+      title: 'Autotest task',
+      order: 0,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: null,
+      columnId: null
+    },
+    result: {
+      id: 'c9393c3d-15b9-4604-835e-ed36f6735c16',
+      title: 'Autotest task',
+      order: 0,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      columnId: null
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.002Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/:id',
+    queryParams: { id: '467c846b-3c30-4633-9508-4ab321c48dc7' },
+    body: {},
+    result: {
+      id: '467c846b-3c30-4633-9508-4ab321c48dc7',
+      title: 'Autotest updated boards',
+      columns: [{"id":"7eb23427-d6cb-414b-818b-42ad8c62f647","title":"Backlog","order":1},{"id":"ba533259-5a8b-40d3-ae09-b1490553a40e","title":"Sprint","order":2}]
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:06.009Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users/:id',
+    queryParams: { id: '8ed3d6d9-b717-460f-8b57-b899ca9b1802' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:06.053Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      taskId: 'c9393c3d-15b9-4604-835e-ed36f6735c16'
+    },
+    body: {
+      id: 'c9393c3d-15b9-4604-835e-ed36f6735c16',
+      title: 'Autotest updated task',
+      order: 0,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      columnId: null
+    },
+    result: {
+      id: undefined,
+      title: undefined,
+      order: undefined,
+      description: undefined,
+      userId: undefined,
+      boardId: undefined,
+      columnId: undefined
+    },
+    type: 'put'
+  },
+  timestamp: '2020-10-28T18:09:06.072Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users',
+    queryParams: {},
+    body: {
+      name: 'TEST_USER',
+      login: 'test_user',
+      password: 'T35t_P@55w0rd'
+    },
+    result: {
+      id: '34e8d919-7979-4d9a-9224-355d8279787e',
+      name: 'TEST_USER',
+      login: 'test_user'
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.121Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      taskId: 'c9393c3d-15b9-4604-835e-ed36f6735c16'
+    },
+    body: {},
+    result: {
+      id: 'c9393c3d-15b9-4604-835e-ed36f6735c16',
+      title: 'Autotest updated task',
+      order: 0,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      columnId: null
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:06.137Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/:id',
+    queryParams: { id: '467c846b-3c30-4633-9508-4ab321c48dc7' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:06.141Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users/:id',
+    queryParams: { id: '34e8d919-7979-4d9a-9224-355d8279787e' },
+    body: {
+      name: 'Autotest updated TEST_USER',
+      login: 'test_user',
+      password: 'T35t_P@55w0rd',
+      id: '34e8d919-7979-4d9a-9224-355d8279787e'
+    },
+    result: { id: undefined, name: undefined, login: undefined },
+    type: 'put'
+  },
+  timestamp: '2020-10-28T18:09:06.187Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      taskId: 'a8db5eb0-d7ff-4f70-af62-7e0cc1cc6b39'
+    },
+    body: {},
+    result: {
+      id: 'a8db5eb0-d7ff-4f70-af62-7e0cc1cc6b39',
+      title: 'Autotest task',
+      order: 0,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      columnId: null
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:06.204Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/',
+    queryParams: {},
+    body: {
+      title: 'Autotest boards',
+      columns: [ { title: 'Backlog', order: 1 }, { title: 'Sprint', order: 2 } ]
+    },
+    result: {
+      id: '9f48dbfe-b823-4b0e-8911-414dbe6be87b',
+      title: 'Autotest boards',
+      columns: [{"id":"77059ffc-c3d9-46fe-abd1-b7be521b4062","title":"Backlog","order":1},{"id":"923c9cab-b0f1-48d8-8223-a310f2679b56","title":"Sprint","order":2}]
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.208Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users/:id',
+    queryParams: { id: '34e8d919-7979-4d9a-9224-355d8279787e' },
+    body: {},
+    result: {
+      id: '34e8d919-7979-4d9a-9224-355d8279787e',
+      name: 'Autotest updated TEST_USER',
+      login: 'test_user'
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:06.256Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 204,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '5b12e02c-b5f8-40e3-83be-87e146540257',
+      taskId: 'a8db5eb0-d7ff-4f70-af62-7e0cc1cc6b39'
+    },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:06.293Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/:id',
+    queryParams: { id: '9f48dbfe-b823-4b0e-8911-414dbe6be87b' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:06.333Z'
+}
+{
+  level: 'warn',
+  message: {
+    statusCode: 404,
+    error: 'Not Found',
+    message: "This task doesn't exist",
+    request: 'findTask'
+  },
+  timestamp: '2020-10-28T18:09:06.357Z'
+}
+{
+  level: 'warn',
+  message: {
+    statusCode: 404,
+    error: 'Not Found',
+    message: "This board doesn't exist",
+    request: 'getByIdBoard'
+  },
+  timestamp: '2020-10-28T18:09:06.400Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users/:id',
+    queryParams: { id: '34e8d919-7979-4d9a-9224-355d8279787e' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:06.436Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/',
+    queryParams: {},
+    body: {
+      title: 'Autotest boards',
+      columns: [ { title: 'Backlog', order: 1 }, { title: 'Sprint', order: 2 } ]
+    },
+    result: {
+      id: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      title: 'Autotest boards',
+      columns: [{"id":"6be5fbab-0cd2-4292-83eb-50f3d81250dd","title":"Backlog","order":1},{"id":"d2746b8b-371c-4995-b188-7fbeaa44ea81","title":"Sprint","order":2}]
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.471Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/:id',
+    queryParams: { id: '5b12e02c-b5f8-40e3-83be-87e146540257' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:06.494Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users',
+    queryParams: {},
+    body: {
+      name: 'TEST_USER',
+      login: 'test_user',
+      password: 'T35t_P@55w0rd'
+    },
+    result: {
+      id: '4618c118-0545-40b8-9148-167dc1182942',
+      name: 'TEST_USER',
+      login: 'test_user'
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.510Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0' },
+    body: {
+      title: 'Task #2',
+      order: 2,
+      description: 'Lorem ipsum',
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      userId: null,
+      columnId: null
+    },
+    result: {
+      id: '14625e12-e5fa-4161-89fb-3fa760673ebb',
+      title: 'Task #2',
+      order: 2,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      columnId: null
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.542Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0' },
+    body: {
+      title: 'Task #1',
+      order: 1,
+      description: 'Lorem ipsum',
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      userId: null,
+      columnId: null
+    },
+    result: {
+      id: '9a93bfc5-9861-4610-b822-86d44fbd1475',
+      title: 'Task #1',
+      order: 1,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      columnId: null
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.551Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0' },
+    body: {
+      title: 'Task #3',
+      order: 3,
+      description: 'Lorem ipsum',
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      userId: null,
+      columnId: null
+    },
+    result: {
+      id: '23557c9f-cf6f-42d6-906a-e0cd8c395ce2',
+      title: 'Task #3',
+      order: 3,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      columnId: null
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.556Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0' },
+    body: {
+      title: 'Task #4',
+      order: 4,
+      description: 'Lorem ipsum',
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      userId: null,
+      columnId: null
+    },
+    result: {
+      id: '70e1c524-ec11-4b84-aab9-4038ca120fe7',
+      title: 'Task #4',
+      order: 4,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      columnId: null
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.561Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0' },
+    body: {
+      title: 'Task #5',
+      order: 5,
+      description: 'Lorem ipsum',
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      userId: null,
+      columnId: null
+    },
+    result: {
+      id: '3b818d34-fc54-44a2-b23e-85888c9090e5',
+      title: 'Task #5',
+      order: 5,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      columnId: null
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.588Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      taskId: '3b818d34-fc54-44a2-b23e-85888c9090e5'
+    },
+    body: {},
+    result: {
+      id: '3b818d34-fc54-44a2-b23e-85888c9090e5',
+      title: 'Task #5',
+      order: 5,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      columnId: null
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:06.652Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      taskId: '70e1c524-ec11-4b84-aab9-4038ca120fe7'
+    },
+    body: {},
+    result: {
+      id: '70e1c524-ec11-4b84-aab9-4038ca120fe7',
+      title: 'Task #4',
+      order: 4,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      columnId: null
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:06.658Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      taskId: '9a93bfc5-9861-4610-b822-86d44fbd1475'
+    },
+    body: {},
+    result: {
+      id: '9a93bfc5-9861-4610-b822-86d44fbd1475',
+      title: 'Task #1',
+      order: 1,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      columnId: null
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:06.661Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      taskId: '14625e12-e5fa-4161-89fb-3fa760673ebb'
+    },
+    body: {},
+    result: {
+      id: '14625e12-e5fa-4161-89fb-3fa760673ebb',
+      title: 'Task #2',
+      order: 2,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      columnId: null
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:06.664Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      taskId: '23557c9f-cf6f-42d6-906a-e0cd8c395ce2'
+    },
+    body: {},
+    result: {
+      id: '23557c9f-cf6f-42d6-906a-e0cd8c395ce2',
+      title: 'Task #3',
+      order: 3,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: '16c33dea-2566-439d-8c11-8fab4cd541d0',
+      columnId: null
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:06.670Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users/:id',
+    queryParams: { id: '4618c118-0545-40b8-9148-167dc1182942' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:06.785Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/:id',
+    queryParams: { id: '16c33dea-2566-439d-8c11-8fab4cd541d0' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:06.792Z'
+}
+{
+  level: 'warn',
+  message: {
+    statusCode: 404,
+    error: 'Not Found',
+    message: "This task doesn't exist",
+    request: 'findTask'
+  },
+  timestamp: '2020-10-28T18:09:06.851Z'
+}
+{
+  level: 'warn',
+  message: {
+    statusCode: 404,
+    error: 'Not Found',
+    message: "This task doesn't exist",
+    request: 'findTask'
+  },
+  timestamp: '2020-10-28T18:09:06.853Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users',
+    queryParams: {},
+    body: {
+      name: 'TEST_USER',
+      login: 'test_user',
+      password: 'T35t_P@55w0rd'
+    },
+    result: {
+      id: '8239de69-05ed-4b4d-b1af-199cea426baa',
+      name: 'TEST_USER',
+      login: 'test_user'
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.861Z'
+}
+{
+  level: 'warn',
+  message: {
+    statusCode: 404,
+    error: 'Not Found',
+    message: "This task doesn't exist",
+    request: 'findTask'
+  },
+  timestamp: '2020-10-28T18:09:06.863Z'
+}
+{
+  level: 'warn',
+  message: {
+    statusCode: 404,
+    error: 'Not Found',
+    message: "This task doesn't exist",
+    request: 'findTask'
+  },
+  timestamp: '2020-10-28T18:09:06.865Z'
+}
+{
+  level: 'warn',
+  message: {
+    statusCode: 404,
+    error: 'Not Found',
+    message: "This task doesn't exist",
+    request: 'findTask'
+  },
+  timestamp: '2020-10-28T18:09:06.898Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/',
+    queryParams: {},
+    body: {
+      title: 'Autotest boards',
+      columns: [ { title: 'Backlog', order: 1 }, { title: 'Sprint', order: 2 } ]
+    },
+    result: {
+      id: 'efa55903-254f-4d9d-89bf-6fee49d33fb9',
+      title: 'Autotest boards',
+      columns: [{"id":"3f9fdb48-8dd8-40b2-bdb8-d02857b954a6","title":"Backlog","order":1},{"id":"d6b7f9cc-ed84-42a0-8da1-0cb4112bea3e","title":"Sprint","order":2}]
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:06.951Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9' },
+    body: {
+      title: 'Task #1',
+      order: 1,
+      description: 'Lorem ipsum',
+      userId: '8239de69-05ed-4b4d-b1af-199cea426baa',
+      boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9'
+    },
+    result: {
+      id: '5463dcc2-2db1-4a77-9500-cfec4661f68a',
+      title: 'Task #1',
+      order: 1,
+      description: 'Lorem ipsum',
+      userId: '8239de69-05ed-4b4d-b1af-199cea426baa',
+      boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9',
+      columnId: null
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:07.017Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks',
+    queryParams: { boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9' },
+    body: {
+      title: 'Task #2',
+      order: 2,
+      description: 'Lorem ipsum',
+      userId: '8239de69-05ed-4b4d-b1af-199cea426baa',
+      boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9'
+    },
+    result: {
+      id: '0a763fa2-b0f1-453f-9fc8-dd921ba1f3fc',
+      title: 'Task #2',
+      order: 2,
+      description: 'Lorem ipsum',
+      userId: '8239de69-05ed-4b4d-b1af-199cea426baa',
+      boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9',
+      columnId: null
+    },
+    type: 'post'
+  },
+  timestamp: '2020-10-28T18:09:07.023Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/:id',
+    queryParams: { id: '06415365-90a4-4028-bd40-f550de941cd2' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:07.031Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/users/:id',
+    queryParams: { id: '8239de69-05ed-4b4d-b1af-199cea426baa' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:07.227Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9',
+      taskId: '5463dcc2-2db1-4a77-9500-cfec4661f68a'
+    },
+    body: {},
+    result: {
+      id: '5463dcc2-2db1-4a77-9500-cfec4661f68a',
+      title: 'Task #1',
+      order: 1,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9',
+      columnId: null
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:07.297Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9',
+      taskId: '0a763fa2-b0f1-453f-9fc8-dd921ba1f3fc'
+    },
+    body: {},
+    result: {
+      id: '0a763fa2-b0f1-453f-9fc8-dd921ba1f3fc',
+      title: 'Task #2',
+      order: 2,
+      description: 'Lorem ipsum',
+      userId: null,
+      boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9',
+      columnId: null
+    },
+    type: 'get'
+  },
+  timestamp: '2020-10-28T18:09:07.366Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 204,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9',
+      taskId: '5463dcc2-2db1-4a77-9500-cfec4661f68a'
+    },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:07.439Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 204,
+    url: '/:boardId/tasks/:taskId',
+    queryParams: {
+      boardId: 'efa55903-254f-4d9d-89bf-6fee49d33fb9',
+      taskId: '0a763fa2-b0f1-453f-9fc8-dd921ba1f3fc'
+    },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:07.442Z'
+}
+{
+  level: 'info',
+  message: {
+    statusCode: 200,
+    url: '/boards/:id',
+    queryParams: { id: 'efa55903-254f-4d9d-89bf-6fee49d33fb9' },
+    body: {},
+    result: {},
+    type: 'delete'
+  },
+  timestamp: '2020-10-28T18:09:07.562Z'
+}
