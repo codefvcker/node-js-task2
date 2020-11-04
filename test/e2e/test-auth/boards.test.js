@@ -1,7 +1,7 @@
 const { request, routes } = require('../lib');
 
 const TEST_BOARD_DATA = {
-  title: 'Autotest boards',
+  title: 'Autotest board',
   columns: [
     { title: 'Backlog', order: 1 },
     { title: 'Sprint', order: 2 }
@@ -14,7 +14,7 @@ describe('Boards suite', () => {
     });
   });
 
-  describe('GET boards by id', () => {
+  describe('GET board by id', () => {
     it('should get 401 without token presented ', async () => {
       await request.get(routes.boards.getById('12345')).expect(401);
     });

@@ -1,9 +1,24 @@
-const { PORT } = require('./common/config');
+const { PORT, MONGO_CONNECTION_STRING } = require('./common/config');
 const app = require('./app');
-const { initDB } = require('./DB');
+const mongoose = require('mongoose');
 
-initDB(() => {
-  app.listen(PORT, () =>
-    console.log(`App is running on http://localhost:${PORT}`)
-  );
-});
+app.listen(PORT, () =>
+  console.log(`App is running on http://localhost:${PORT}.`)
+);
+
+mongoose.connect(
+  MONGO_CONNECTION_STRING,
+  {
+    useCreateIndex: true,
+    useFindAndModify: false,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  },
+  err => {
+    if (err) {
+      throw new Error(err);
+    } else {
+      console.log('Database connected.');
+    }
+  }
+);

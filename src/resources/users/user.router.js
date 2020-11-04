@@ -1,99 +1,64 @@
 const router = require('express').Router();
+const { toResponse } = require('./user.model');
 const usersService = require('./user.service');
-const handler = require('../../utils/handler');
-const createSuccessObj = require('../../utils/success');
-const User = require('./user.model');
+const validator = require('../../utils/validation/validator');
+const { userSchema, idSchema } = require('../../utils/validation/schemas');
 
-router.route('/').get(
-  handler(async (req, res, next) => {
+const getAllHandler = async (req, res, next) => {
+  try {
     const users = await usersService.getAll();
-    res.json(users.map(user => User.toResponse(user)));
-    next(
-      createSuccessObj({
-        statusCode: 200,
-        url: '/users',
-        type: 'get',
-        queryParams: req.params,
-        body: req.body,
-        result: users.map(user => User.toResponse(user))
-      })
-    );
-  })
-);
+    res.status(200).send(users.map(toResponse));
+  } catch (error) {
+    return next(error);
+  }
+};
 
-router.route('/').post(
-  handler(async (req, res, next) => {
-    const { name, login, password } = req.body;
-    const user = await usersService.addUser(name, login, password);
-    res.json(User.toResponse(user));
-    next(
-      createSuccessObj({
-        statusCode: 200,
-        url: '/users',
-        type: 'post',
-        queryParams: req.params,
-        body: req.body,
-        result: User.toResponse(user)
-      })
-    );
-  })
-);
-
-router.route('/:id').get(
-  handler(async (req, res, next) => {
+const getByIdHandler = async (req, res, next) => {
+  try {
     const user = await usersService.getById(req.params.id);
-    res.json(User.toResponse(user));
-    next(
-      createSuccessObj({
-        statusCode: 200,
-        url: '/users/:id',
-        type: 'get',
-        queryParams: req.params,
-        body: req.body,
-        result: User.toResponse(user)
-      })
-    );
-  })
-);
+    res.status(200).send(toResponse(user));
+  } catch (error) {
+    return next(error);
+  }
+};
 
-router.route('/:id').put(
-  handler(async (req, res, next) => {
-    const { name, login, password } = req.body;
-    const updatedUser = await usersService.updateUser(
-      name,
-      login,
-      password,
-      req.params.id
-    );
-    res.json(User.toResponse(updatedUser));
-    next(
-      createSuccessObj({
-        statusCode: 200,
-        url: '/users/:id',
-        type: 'put',
-        queryParams: req.params,
-        body: req.body,
-        result: User.toResponse(updatedUser)
-      })
-    );
-  })
-);
+const createHandler = async (req, res, next) => {
+  try {
+    const user = await usersService.createUser(req.body);
+    res.status(200).send(toResponse(user));
+  } catch (error) {
+    return next(error);
+  }
+};
 
-router.route('/:id').delete(
-  handler(async (req, res, next) => {
-    await usersService.getById(req.params.id);
-    await usersService.deleteById(req.params.id);
-    res.status(204).end();
-    next(
-      createSuccessObj({
-        statusCode: 200,
-        url: '/users/:id',
-        type: 'delete',
-        queryParams: req.params,
-        body: req.body
-      })
-    );
-  })
-);
+const updateHandler = async (req, res, next) => {
+  try {
+    const user = await usersService.updateUser(req.params.id, req.body);
+    res.status(200).send(toResponse(user));
+  } catch (error) {
+    return next(error);
+  }
+};
+
+const deleteHandler = async (req, res, next) => {
+  try {
+    const user = await usersService.deleteUser(req.params.id);
+    res.status(200).send(user);
+  } catch (error) {
+    return next(error);
+  }
+};
+
+router.route('/').get(getAllHandler);
+router.route('/:id').get(validator(idSchema, 'params'), getByIdHandler);
+router.route('/').post(validator(userSchema, 'body'), createHandler);
+router
+  .route('/:id')
+  .put(
+    validator(idSchema, 'params'),
+    validator(userSchema, 'body'),
+    updateHandler
+  );
+router.route('/:id').delete(validator(idSchema, 'params'), deleteHandler);
 
 module.exports = router;

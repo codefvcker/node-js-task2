@@ -3,11 +3,21 @@ const swaggerUI = require('swagger-ui-express');
 const path = require('path');
 const YAML = require('yamljs');
 const userRouter = require('./resources/users/user.router');
-const boardsRouter = require('./resources/boards/boards.router');
-const logger = require('./utils/logger');
+const boardsRouter = require('./resources/boards/board.router');
+const loginRouter = require('./resources/login/login.router');
+const { logger, errorHandler } = require('./utils/logger/logger');
+const {
+  promiseRejectHandler,
+  uncaughtExceptionHandler
+} = require('./utils/logger/logger');
+const { authorize } = require('./utils/authentication/auth');
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
+
+process
+  .on('unhandledRejection', promiseRejectHandler)
+  .on('uncaughtException', uncaughtExceptionHandler);
 
 app.use(express.json());
 
@@ -21,33 +31,13 @@ app.use('/', (req, res, next) => {
   next();
 });
 
-app.use('/users', userRouter);
-app.use('/boards', boardsRouter);
+app.use(logger);
+app.use('/users', authorize, userRouter);
+app.use('/boards', authorize, boardsRouter);
+app.use('/login', loginRouter);
+app.use(errorHandler);
 
-app.use((obj, req, res, next) => {
-  if (obj.isSuccess) {
-    return logger.log({
-      level: 'info',
-      message: obj.data
-    });
-  }
-  next(obj);
-});
-
-app.use((err, req, res, next) => {
-  if (err.isBoom) {
-    logger.log({
-      level: 'warn',
-      message: { ...err.output.payload, ...err.data }
-    });
-    return res.status(err.output.payload.statusCode).json(err.output.payload);
-  }
-  res.status(500).json(err);
-  logger.log({
-    level: 'error',
-    message: err
-  });
-  next();
-});
+// throw Error('throw Error!');
+// Promise.reject(Error('Promise.reject!'));
 
 module.exports = app;

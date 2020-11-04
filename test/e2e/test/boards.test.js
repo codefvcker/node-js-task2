@@ -6,7 +6,7 @@ const {
 } = require('../utils');
 
 const TEST_BOARD_DATA = {
-  title: 'Autotest boards',
+  title: 'Autotest board',
   columns: [
     { title: 'Backlog', order: 1 },
     { title: 'Sprint', order: 2 }
@@ -48,7 +48,7 @@ describe('Boards suite', () => {
         });
     });
 
-    it('should get a boards by id', async () => {
+    it('should get a board by id', async () => {
       // Setup
       let expectedBoard;
 
@@ -74,7 +74,7 @@ describe('Boards suite', () => {
   });
 
   describe('POST', () => {
-    it('should create boards successfully', async () => {
+    it('should create board successfully', async () => {
       let boardId;
 
       await request
@@ -95,7 +95,7 @@ describe('Boards suite', () => {
   });
 
   describe('PUT', () => {
-    it('should update boards successfully', async () => {
+    it('should update board successfully', async () => {
       // Setup
       let boardToUpdate;
 
@@ -109,7 +109,7 @@ describe('Boards suite', () => {
 
       const updatedBoard = {
         ...boardToUpdate,
-        title: 'Autotest updated boards'
+        title: 'Autotest updated board'
       };
 
       // Test
@@ -133,7 +133,7 @@ describe('Boards suite', () => {
   });
 
   describe('DELETE', () => {
-    it('should delete boards successfully', async () => {
+    it('should delete board successfully', async () => {
       // Setup:
       let boardId;
 
@@ -153,7 +153,7 @@ describe('Boards suite', () => {
       await request.get(routes.boards.getById(boardId)).expect(404);
     });
 
-    it("should delete boards's tasks upon deletion", async () => {
+    it("should delete board's tasks upon deletion", async () => {
       // Setup:
       const res = await request
         .post(routes.boards.create)
